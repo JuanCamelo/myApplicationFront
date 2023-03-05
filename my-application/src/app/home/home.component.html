@@ -1,0 +1,33 @@
+<div class="data-grid" >
+    <div id="data-grid-demo">
+        <dx-data-grid id="gridContainer" [dataSource]="dataSource" keyExpr="id" [showBorders]="true"
+        (onRowInserted)="onCreatedStart($event)"        
+        (onRowUpdated)="onEditingStart($event)">
+            <dxo-paging [enabled]="false"></dxo-paging>
+            <dxo-editing mode="popup" [allowUpdating]="true" [allowAdding]="true" [allowDeleting]="true">
+                <dxo-popup title="User Info" [showTitle]="true" [width]="700" [height]="325">
+                </dxo-popup>
+                <dxo-form>
+                    <dxi-item itemType="group" [colCount]="2" [colSpan]="2">
+                        <dxi-item dataField="userName"></dxi-item>
+                        <dxi-item dataField="user"></dxi-item>
+                        <dxi-item dataField="phone"></dxi-item>
+                        <dxi-item dataField="typeContact"></dxi-item>
+                        <dxi-item dataField="position"></dxi-item>
+                        <dxi-item dataField="gmail"></dxi-item>
+                    </dxi-item>
+                </dxo-form>
+            </dxo-editing>
+
+            <dxi-column dataField="userName" caption="User Name" [width]="170"></dxi-column>
+            <dxi-column dataField="user" caption="User"></dxi-column>
+            <dxi-column dataField="phone" dataType="Phone"></dxi-column>
+            <dxi-column dataField="position" dataType="Position"> </dxi-column>
+            <dxi-column dataField="typeContact" dataType="Type Contact"> </dxi-column>
+            <dxi-column dataField="gmail" caption="Gmail" [width]="125">
+            </dxi-column>
+
+        </dx-data-grid>
+    </div>
+
+</div>

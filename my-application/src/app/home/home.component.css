@@ -1,0 +1,7 @@
+::ng-deep #data-grid-demo {
+    min-height: 530px;
+  }
+
+  .data-grid{
+    margin: 8%;
+  }
