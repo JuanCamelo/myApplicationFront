@@ -22,7 +22,7 @@ para garantizar que la aplicación funcione correctamente.
 Como herramientas para cumplir este proceso podemos utilizar, GitHub Actions o cualquier herramienta open-source como:
 CircleCI, Travis CI, Jenkins.
 
-- **Cloud:** en este proceso se plantea hacer uso de los servicios de AWS serverless o administrados como instancias EC2,
+- **Cloud:** en este proceso se plantea hacer uso de los servicios de aws bucket y route 53,
 la creación de estos recursos se realizará por medio de los flujos pipelines utilizando platillas YAML.
 Utilizando estrategias de infraestructura como código (IaC) que son un enfoque para la administración de 
 infraestructuras de TI que se basa en la automatización y la gestión del ciclo de vida de la infraestructura mediante código, 
